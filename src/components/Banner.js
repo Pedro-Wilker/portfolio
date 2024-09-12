@@ -9,8 +9,8 @@ export const Banner = () => {
         const [text, setText] = useState('');
         const [delta, setDelta] = useState(100 - Math.random() * 100);
         const [index, setIndex] = useState(1);
-        const toRotate = [ "Dev Front-End", "Dev Back-End", "Dev FullStack" ];
-        const period = 2000;
+        const toRotate = [ "Dev FullStack" ];
+        const period = 1700;
       
         useEffect(() => {
           let ticker = setInterval(() => {
@@ -39,7 +39,7 @@ export const Banner = () => {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setIndex(1);
-            setDelta(500);
+            setDelta(200);
           } else {
             setIndex(prevIndex => prevIndex + 1);
           }
@@ -52,8 +52,9 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Seja bem-vindo ao meu portfólio.</span>
                         <h1>{`Olá, eu sou Pedro e sou `}<span className="wrap">{text}</span></h1>
-                        <p>Bem-vindo ao meu portfólio! Sou um desenvolvedor de software com experiência em back-end e front-end, trabalhando com linguagens como Java, JavaScript, Python e TypeScript, e frameworks como Angular, Zul, React, Node e React Native. Estou focado em criar soluções inovadoras e elegantes</p>
-                        <button onClick={()=> console.log('connect')}>Vamos nos conectar<ArrowRightCircle size={25} /></button>
+                        <p>Bem-vindo ao meu portfólio! Sou um desenvolvedor de software FullStack, trabalhando com linguagens como Java, JavaScript, Python e TypeScript, e frameworks como Angular, Zul, React, Node e React Native. Estou focado em criar soluções inovadoras e elegantes</p>
+                        <button onClick={() => window.location.href = 'https://wa.me/5571996592762'}>Vamos nos conectar<ArrowRightCircle size={25} /></button>
+
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />

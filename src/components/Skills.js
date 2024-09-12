@@ -44,16 +44,12 @@ export const Skills = () => {
                                 <h5>Software Developer</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Front End Developer</h5>
+                                <img src={meter1} alt="Image" />
+                                <h5>FullStack Developer</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Back End Developer</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Desing</h5>
+                                <h5>Web Desing</h5>
                             </div>                           
                         </Carousel>
                     </div>
