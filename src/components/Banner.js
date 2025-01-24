@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap"
 import {ArrowRightCircle} from "react-bootstrap-icons";
@@ -18,6 +19,7 @@ export const Banner = () => {
           }, delta);
       
           return () => { clearInterval(ticker) };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         }, [text])
       
         const tick = () => {
